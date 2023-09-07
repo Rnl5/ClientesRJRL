@@ -1,11 +1,20 @@
+using ClientesRJRL.DAL;
+using ClientesRJRL.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+using ClientesRJRL.BLL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+
+builder.Services.AddDbContext<ClientesContext>(c =>
+{
+    c.UseSqlite("Data Source = Clientes.db");
+});
 
 var app = builder.Build();
 

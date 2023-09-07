@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClientesRJRL
 build_property.RootNamespace = ClientesRJRL
-build_property.ProjectDir = C:\Programas de Blazor\ClientesRJRL\
+build_property.ProjectDir = c:\Programas de Blazor\ClientesRJRL\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Programas de Blazor\ClientesRJRL
+build_property.MSBuildProjectDirectory = c:\Programas de Blazor\ClientesRJRL
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Programas de Blazor/ClientesRJRL/App.razor]
+[c:/Programas de Blazor/ClientesRJRL/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/Pages/Counter.razor]
+[c:/Programas de Blazor/ClientesRJRL/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/Pages/FetchData.razor]
+[c:/Programas de Blazor/ClientesRJRL/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/Pages/Index.razor]
+[c:/Programas de Blazor/ClientesRJRL/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/_Imports.razor]
+[c:/Programas de Blazor/ClientesRJRL/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/Shared/MainLayout.razor]
+[c:/Programas de Blazor/ClientesRJRL/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5xac5czmow
 
-[C:/Programas de Blazor/ClientesRJRL/Shared/NavMenu.razor]
+[c:/Programas de Blazor/ClientesRJRL/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-t3q5vz473m
 
-[C:/Programas de Blazor/ClientesRJRL/Pages/Error.cshtml]
+[c:/Programas de Blazor/ClientesRJRL/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Programas de Blazor/ClientesRJRL/Pages/_Host.cshtml]
+[c:/Programas de Blazor/ClientesRJRL/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

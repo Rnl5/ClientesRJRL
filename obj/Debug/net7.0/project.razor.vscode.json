@@ -9,45 +9,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1278269432,
-        "Kind": "Components.Component",
-        "Name": "ClientesRJRL.Pages.FetchData",
-        "AssemblyName": "ClientesRJRL",
-        "DisplayName": "ClientesRJRL.Pages.FetchData",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "ClientesRJRL.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "ClientesRJRL.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1076725103,
-        "Kind": "Components.Component",
-        "Name": "ClientesRJRL.Pages.FetchData",
-        "AssemblyName": "ClientesRJRL",
-        "DisplayName": "ClientesRJRL.Pages.FetchData",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ClientesRJRL.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "ClientesRJRL.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "ClientesRJRL.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -489186054,
         "Kind": "Components.Component",
         "Name": "ClientesRJRL.Pages.Counter",
@@ -24332,11 +24293,6 @@
     {
       "FilePath": "c:\\Programas de Blazor\\ClientesRJRL\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Programas de Blazor\\ClientesRJRL\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     }
   ]

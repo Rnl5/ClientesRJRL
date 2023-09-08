@@ -18,6 +18,10 @@ builder.Services.AddDbContext<ClientesContext>(c =>
 
 builder.Services.AddScoped<ClienteBLL>();
 
+
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

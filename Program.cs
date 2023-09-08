@@ -16,6 +16,8 @@ builder.Services.AddDbContext<ClientesContext>(c =>
     c.UseSqlite("Data Source = Clientes.db");
 });
 
+builder.Services.AddScoped<ClienteBLL>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

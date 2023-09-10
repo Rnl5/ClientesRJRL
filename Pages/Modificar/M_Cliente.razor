@@ -3,6 +3,7 @@
 @inject ClienteBLL ClienteBLL
 @inject NavigationManager NavigationManager
 
+<PageTitle>Modificar Cliente </PageTitle>
 
 <h1>Modificar cliente</h1>
 
@@ -15,8 +16,6 @@
 			<td><input class = "form-control col-sm-4" type="text" @bind="cliente.Nombres" /></td>
 
 		</tr>
-
-
 		<tr>
 			<td>Telefono:</td>
 			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Telefono" /></td>
@@ -43,7 +42,7 @@
 		<tr>
 			<td colspan="2" style ="text-align:center">
 				<input type="submit" value ="Guardar" @onclick="Guardar" />
-				<input type="button" value="CancelarEdicion" @onclick="CancelarEdicion"/>
+				<input type="button" value="Cancelar" @onclick="CancelarEdicion"/>
 			
 			</td>
 

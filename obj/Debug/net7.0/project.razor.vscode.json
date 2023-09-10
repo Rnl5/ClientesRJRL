@@ -150,6 +150,45 @@
         }
       },
       {
+        "HashCode": 1906396812,
+        "Kind": "Components.Component",
+        "Name": "ClientesRJRL.Pages.Consulta.C_Clientes",
+        "AssemblyName": "ClientesRJRL",
+        "DisplayName": "ClientesRJRL.Pages.Consulta.C_Clientes",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "C_Clientes"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "ClientesRJRL.Pages.Consulta.C_Clientes",
+          "Common.TypeNameIdentifier": "C_Clientes",
+          "Common.TypeNamespace": "ClientesRJRL.Pages.Consulta",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -922766077,
+        "Kind": "Components.Component",
+        "Name": "ClientesRJRL.Pages.Consulta.C_Clientes",
+        "AssemblyName": "ClientesRJRL",
+        "DisplayName": "ClientesRJRL.Pages.Consulta.C_Clientes",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ClientesRJRL.Pages.Consulta.C_Clientes"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "ClientesRJRL.Pages.Consulta.C_Clientes",
+          "Common.TypeNameIdentifier": "C_Clientes",
+          "Common.TypeNamespace": "ClientesRJRL.Pages.Consulta",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -1158174625,
         "Kind": "Components.Component",
         "Name": "ClientesRJRL.App",
@@ -24400,6 +24439,11 @@
     {
       "FilePath": "c:\\Programas de Blazor\\ClientesRJRL\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Programas de Blazor\\ClientesRJRL\\Pages\\Consulta\\C_Clientes.razor",
+      "TargetPath": "Pages\\Consulta\\C_Clientes.razor",
       "FileKind": "component"
     }
   ]

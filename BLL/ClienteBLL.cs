@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using ClientesRJRL.DAL;
 using ClientesRJRL.Models;
 using Microsoft.EntityFrameworkCore;
@@ -51,10 +52,11 @@ public class ClienteBLL{
             .SingleOrDefault();
     }
 
-    public List<Clientes> GetClientes()
+    public List<Clientes> GetClientes(Expression<Func<Clientes, bool>> Criterio)
     {
         return _context.Clientes
             .AsNoTracking()
+            .Where(Criterio)
             .ToList();
     }
 

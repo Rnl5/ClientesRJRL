@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Programas de Blazor/ClientesRJRL/Pages/Modificar/M_Cliente.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kaWZpY2FyXE1fQ2xpZW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Programas de Blazor/ClientesRJRL/Pages/Registro/R_Clientes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9cUl9DbGllbnRlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

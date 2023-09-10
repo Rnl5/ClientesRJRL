@@ -1,0 +1,92 @@
+@page "/editarClientes"
+@page "/editarClientes/{ClienteId:int}"
+@inject ClienteBLL ClienteBLL
+@inject NavigationManager NavigationManager
+
+
+<h1>Modificar cliente</h1>
+
+<EditForm Model="@cliente">
+	<table class ="table">
+		<tr>
+			<td>
+				Nombre:
+			</td>
+			<td><input class = "form-control col-sm-4" type="text" @bind="cliente.Nombres" /></td>
+
+		</tr>
+
+
+		<tr>
+			<td>Telefono:</td>
+			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Telefono" /></td>
+		</tr>
+
+        <tr>
+			<td>Celular:</td>
+			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Celular" /></td>
+		</tr>
+        <tr>
+			<td>Rnc:</td>
+			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Rnc" /></td>
+		</tr>
+        <tr>
+			<td>Email:</td>
+			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Email" /></td>
+		</tr>
+        <tr>
+			<td>Direccion:</td>
+			<td><input class="form-control col-sm-4" type="text" @bind="cliente.Direccion" /></td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2" style ="text-align:center">
+				<input type="submit" value ="Guardar" @onclick="Guardar" />
+				<input type="button" value="CancelarEdicion" @onclick="CancelarEdicion"/>
+			
+			</td>
+
+		</tr>
+
+
+	</table>
+</EditForm>
+
+@code {
+
+	[Parameter]
+	public int ClienteId { get; set; }
+
+	private Clientes cliente = new Clientes();
+
+
+	protected override void OnInitialized()
+	{
+		this.cliente.ClienteId = ClienteId;
+        this.Buscar();
+	}
+
+	public void Guardar()
+	{
+		ClienteBLL.Guardar(cliente);
+
+		NavigationManager.NavigateTo("/consultaClientes");
+	}
+
+	public void CancelarEdicion()
+	{
+		NavigationManager.NavigateTo("/consultaClientes");
+	}
+
+    public void Buscar()
+    {
+        var clienteEncontrado = ClienteBLL.Buscar(cliente.ClienteId);
+
+        if(clienteEncontrado != null)
+        {
+            this.cliente = clienteEncontrado;
+        }
+    }
+
+}

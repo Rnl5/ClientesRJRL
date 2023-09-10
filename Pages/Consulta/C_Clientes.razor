@@ -5,3 +5,63 @@
 <PageTitle>Consulta de Clientes</PageTitle>
 
 <h1>Consulta de Clientes</h1>
+
+
+<div>
+	<a href="/registroClientes"><i>Agregar Cliente</i> </a>
+</div>
+<hr/>
+
+<style>
+	table, th, td{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
+
+<body>
+	<table class="table">
+		<thead>
+			<tr bgcolor = "lightgrey">
+				<th>Id cliente</th>
+				<th>Nombres</th>
+				<th>Telefono</th>
+                <th>Celular</th>
+                <th>RNC</th>
+                <th>Email</th>
+                <th>Direccion</th>
+				<th>Modificar</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			@foreach(var cliente in clientes)
+			{
+			<tr>
+				<td>@cliente.ClienteId</td>
+				<td>@cliente.Nombres</td>
+				<td>@cliente.Telefono</td>
+				<td>@cliente.Celular</td>
+                <td>@cliente.Rnc</td>
+                <td>@cliente.Email</td>
+                <td>@cliente.Direccion</td>
+				<td><a href="/editarClientes/@cliente.ClienteId"> <i>Editar</i> </a> </td>
+			</tr>
+			}
+
+		</tbody>
+
+
+	</table>
+
+	</body>
+
+@code{
+	public List<Clientes> clientes { get; set; } = new List<Clientes>();
+	public Clientes cliente {get; set;} = new Clientes();
+
+	protected override void OnInitialized()
+	{
+        clientes = ClienteBLL.GetClientes(c => true);
+	}
+}

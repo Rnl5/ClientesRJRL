@@ -22,9 +22,6 @@ builder.Services.AddScoped<ClienteBLL>();
 builder.Services.AddRadzenComponents();
 
 
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

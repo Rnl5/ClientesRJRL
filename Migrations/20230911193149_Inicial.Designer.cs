@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClientesRJRL.Migrations
 {
     [DbContext(typeof(ClientesContext))]
-    [Migration("20230910033307_Inicial")]
+    [Migration("20230911193149_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />

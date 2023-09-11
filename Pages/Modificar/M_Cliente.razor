@@ -41,14 +41,10 @@
 		<br>
 		<tr>
 			<td colspan="2" style ="text-align:center">
-				<input type="submit" value ="Guardar" @onclick="Guardar" />
-				<input type="button" value="Cancelar" @onclick="CancelarEdicion"/>
-			
+				<button type ="submit"class="btn btn-outline-success" @onclick="Guardar">Guardar <i class ="oi oi-document" /></button>
+				<button type ="submit"class="btn btn-outline-warning" @onclick="Cancelar">Cancelar <i class ="oi oi-warning" /></button>
 			</td>
-
 		</tr>
-
-
 	</table>
 </EditForm>
 
@@ -58,7 +54,6 @@
 	public int ClienteId { get; set; }
 
 	private Clientes cliente = new Clientes();
-
 
 	protected override void OnInitialized()
 	{
@@ -73,7 +68,7 @@
 		NavigationManager.NavigateTo("/consultaClientes");
 	}
 
-	public void CancelarEdicion()
+	public void Cancelar()
 	{
 		NavigationManager.NavigateTo("/consultaClientes");
 	}

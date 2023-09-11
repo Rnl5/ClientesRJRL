@@ -1,6 +1,7 @@
 @page "/registroClientes"
 
 @inject ClienteBLL ClienteBLL
+@inject NotificationService NotificationService
 
 <PageTitle>Registro de Clientes</PageTitle>
 
@@ -15,52 +16,52 @@
                 <h4>Registro</h4>
             </div>
             <div class="card-body">
-                <label> Cliente ID:</label>
+                <label>ID:</label>
                 <div class="input-group mb-3">
-                    <InputNumber @bind-Value="cliente.ClienteId" class="form-control" aria-describedby="BotonBuscarId" />
+                    <InputNumber size="3" @bind-Value="cliente.ClienteId" class="form-control" aria-describedby="BotonBuscarId"/>
                     <button @onclick="Buscar" class="btn btn-outline-primary" type="button" id="BotonBuscarId"><i class="oi oi-magnifying-glass" /> </button>
                 </div>
 
                 <div>
-                    <label>Nombre del Cliente:</label>
+                    <label>Nombre:</label>
                     <div class="input-group mb-3">
-                       <InputText @bind-Value="cliente.Nombres" class="form-control" aria-describedby="NombreCliente" />
+                       <InputText  @bind-Value="cliente.Nombres" class="form-control" aria-describedby="NombreCliente" size="10px" />
                         <ValidationMessage For="@(() =>cliente.Nombres)" />
                     </div>
                 </div>
 
                 <div>
-                    <label>Telefono del cliente:</label>
+                    <label>Teléfono:</label>
                     <div class="input-group mb-3">
-                        <InputText @bind-Value="cliente.Telefono" class="form-control" aria-describedby="TelefonoCliente"></InputText>
+                        <InputText type ="tel" @bind-Value="cliente.Telefono" class="form-control" aria-describedby="TelefonoCliente"></InputText>
                         <ValidationMessage For="@(() =>cliente.Telefono)" ></ValidationMessage>
                     </div>
                 </div>
 
                 <div>
-                    <label>Celular del cliente:</label>
+                    <label>Celular:</label>
                     <div class ="input-group mb-3">
-                        <InputText @bind-Value="cliente.Celular" class="form-control" aria-describedby="CelularCliente"></InputText>
+                        <InputText type ="tel" @bind-Value="cliente.Celular" class="form-control" aria-describedby="CelularCliente"></InputText>
                         <ValidationMessage For="@(() => cliente.Celular)"></ValidationMessage>
                     </div>
                 </div>
 
                 <div>
-                    <label>RNC del Cliente:</label>
+                    <label>RNC:</label>
                     <div class="input-group mb-3" >
                         <InputText @bind-Value ="cliente.Rnc" class="form-control" aria-describedby="RncCliente"></InputText>
                         <ValidationMessage For="@(() => cliente.Rnc)"></ValidationMessage>
                     </div>
                 </div>
                 <div>
-                    <label>Email del Cliente:</label>
+                    <label>Email:</label>
                     <div class="input-group mb-3">
-                        <InputText @bind-Value ="cliente.Email" class="form-control" aria-describedby="EmailCliente"></InputText>
+                        <InputText type ="email" @bind-Value ="cliente.Email" class="form-control" aria-describedby="EmailCliente"></InputText>
                         <ValidationMessage For="@(() => cliente.Email)"></ValidationMessage>
                     </div>
                 </div>
                 <div>
-                    <label>Direccion del cliente:</label>
+                    <label>Dirección:</label>
                     <div class="input-group mb-3">
                         <InputText @bind-Value="cliente.Direccion" class="form-control" aria-describedby="DireccionCliente"></InputText>
                         <ValidationMessage For="@(() => cliente.Direccion)"></ValidationMessage>
@@ -85,12 +86,16 @@
 
 
 
-@code {
+@code 
+{
     [Parameter]
     public int ClienteId{get;set;}
 
     public Clientes cliente {get; set;} = new Clientes();
 
+    public string Mensaje { get; set; } = "";
+
+    public string validandoRnc {get; set;} = string.Empty;
 
     protected override void OnInitialized()
     {
@@ -105,8 +110,12 @@
 
 
     public void Guardar(){
-        if(!Validar())
+        if(ClienteBLL.ExisteDatos(this.cliente) == false)
         {
+            //NotificationService.ShowNotification(
+           // titulo: "Validacion",
+            //Mensaje: "Error: El nombre o el RNC del cliente ya existe",
+            //NotificationSeverity.Error);
             return;
         }
         if(ClienteBLL.Guardar(this.cliente))
@@ -139,6 +148,4 @@
     {
         return cliente.Nombres != null && cliente.Celular != null && cliente.Email != null && cliente.Rnc != null && cliente.Direccion != null && cliente.Telefono != null;
     }
-
-
 }

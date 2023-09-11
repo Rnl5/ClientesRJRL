@@ -60,5 +60,16 @@ public class ClienteBLL{
             .ToList();
     }
 
-
+    public bool ExisteDatos(Clientes cliente)
+    {
+        var mismosDatos = _context.Clientes.Any(c =>c.Nombres == cliente.Nombres || c.Rnc == cliente.Rnc);
+        if(mismosDatos)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 }

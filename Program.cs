@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using ClientesRJRL.BLL;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddDbContext<ClientesContext>(c =>
 });
 
 builder.Services.AddScoped<ClienteBLL>();
+
+builder.Services.AddRadzenComponents();
 
 
 

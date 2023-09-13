@@ -7,7 +7,6 @@ public class Clientes{
     [Key]
     public int ClienteId {get; set;}
 
-
     [Required (ErrorMessage = "Debe de insertar un nombre")]
     public string? Nombres{get; set;}
 
@@ -25,6 +24,4 @@ public class Clientes{
 
     [Required(ErrorMessage ="Debe de insertar una direccion")]
     public string? Direccion{get; set;}
-
-
 }

@@ -17,7 +17,7 @@ builder.Services.AddDbContext<ClientesContext>(c =>
     c.UseSqlite("Data Source = Clientes.db");
 });
 
-builder.Services.AddScoped<ClienteBLL>();
+builder.Services.AddScoped<ClientesBLL>();
 
 builder.Services.AddRadzenComponents();
 

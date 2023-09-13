@@ -8,7 +8,7 @@ public class Clientes{
     public int ClienteId {get; set;}
 
     [Required (ErrorMessage = "Debe de insertar un nombre")]
-    public string? Nombres{get; set;}
+    public string? Nombre{get; set;}
 
     [Required(ErrorMessage ="Debe de insertar un numero telefonico")]
     public string? Telefono{get; set;}

@@ -25,8 +25,8 @@
                 <div>
                     <label>Nombre:</label>
                     <div class="input-group mb-3">
-                       <InputText  @bind-Value="cliente.Nombres" class="form-control" aria-describedby="NombreCliente" size="10px" />
-                        <ValidationMessage For="@(() =>cliente.Nombres)" />
+                       <InputText  @bind-Value="cliente.Nombre" class="form-control" aria-describedby="NombreCliente" size="10px" />
+                        <ValidationMessage For="@(() =>cliente.Nombre)" />
                     </div>
                 </div>
 
@@ -139,6 +139,6 @@
 
     public bool Validar()
     {
-        return cliente.Nombres != null && cliente.Celular != null && cliente.Email != null && cliente.Rnc != null && cliente.Direccion != null && cliente.Telefono != null;
+        return cliente.Nombre != null && cliente.Celular != null && cliente.Email != null && cliente.Rnc != null && cliente.Direccion != null && cliente.Telefono != null;
     }
 }

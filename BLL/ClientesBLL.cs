@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ClientesRJRL.BLL;
 
-public class ClienteBLL{
+public class ClientesBLL{
     private readonly ClientesContext _context;
 
-    public ClienteBLL(ClientesContext context){
+    public ClientesBLL(ClientesContext context){
         _context = context;
     }
 
@@ -63,7 +63,7 @@ public class ClienteBLL{
 
     public bool ExisteDatos(Clientes cliente)
     {
-        var mismosDatos = _context.Clientes.Any(c =>c.Nombres == cliente.Nombres || c.Rnc == cliente.Rnc);
+        var mismosDatos = _context.Clientes.Any(c =>c.Nombre == cliente.Nombre || c.Rnc == cliente.Rnc);
         if(mismosDatos)
         {
             return false;

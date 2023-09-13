@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Programas de Blazor/ClientesRJRL/Pages/Consulta/C_Clientes.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFcQ19DbGllbnRlcy5yYXpvcg==
+[c:/Programas de Blazor/ClientesRJRL/Pages/Consultas/C_Clientes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFzXENfQ2xpZW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Programas de Blazor/ClientesRJRL/Pages/Index.razor]
@@ -32,8 +32,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kaWZpY2FyXE1fQ2xpZW50ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Programas de Blazor/ClientesRJRL/Pages/Registro/R_Clientes.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9cUl9DbGllbnRlcy5yYXpvcg==
+[c:/Programas de Blazor/ClientesRJRL/Pages/Registros/R_Clientes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9zXFJfQ2xpZW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Programas de Blazor/ClientesRJRL/_Imports.razor]

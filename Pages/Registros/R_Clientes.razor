@@ -1,6 +1,6 @@
 @page "/registroClientes"
 
-@inject ClienteBLL ClienteBLL
+@inject ClientesBLL ClientesBLL
 @inject NavigationManager NavigationManager
 
 <PageTitle>Registro de Clientes</PageTitle>
@@ -106,11 +106,11 @@
     }
 
     public void Guardar(){
-        if(ClienteBLL.ExisteDatos(this.cliente) == false)
+        if(ClientesBLL.ExisteDatos(this.cliente) == false)
         {
             return;
         }
-        if(ClienteBLL.Guardar(this.cliente))
+        if(ClientesBLL.Guardar(this.cliente))
         {
             this.Nuevo();
         }
@@ -120,7 +120,7 @@
     public void Eliminar()
     {
         Buscar();
-        if(ClienteBLL.Eliminar(this.cliente))
+        if(ClientesBLL.Eliminar(this.cliente))
         {
             this.Nuevo();
         }
@@ -129,7 +129,7 @@
 
     public void Buscar()
     {
-        var clienteEncontrado = ClienteBLL.Buscar(cliente.ClienteId);
+        var clienteEncontrado = ClientesBLL.Buscar(cliente.ClienteId);
 
         if(clienteEncontrado != null)
         {

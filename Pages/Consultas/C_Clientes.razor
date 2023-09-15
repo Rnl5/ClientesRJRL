@@ -1,6 +1,6 @@
 @page "/consultaClientes"
 
-@inject ClienteBLL ClienteBLL
+@inject ClientesBLL ClientesBLL
 
 <PageTitle>Consulta de Clientes</PageTitle>
 
@@ -61,6 +61,6 @@
 
 	protected override void OnInitialized()
 	{
-        clientes = ClienteBLL.GetClientes(c => true);
+        clientes = ClientesBLL.GetClientes(c => true);
 	}
 }

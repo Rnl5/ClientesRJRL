@@ -1,6 +1,6 @@
 @page "/editarClientes"
 @page "/editarClientes/{ClienteId:int}"
-@inject ClienteBLL ClienteBLL
+@inject ClientesBLL ClientesBLL
 @inject NavigationManager NavigationManager
 
 <PageTitle>Modificar Cliente </PageTitle>
@@ -63,7 +63,7 @@
 
 	public void Guardar()
 	{
-		ClienteBLL.Guardar(cliente);
+		ClientesBLL.Guardar(cliente);
 
 		NavigationManager.NavigateTo("/consultaClientes");
 	}
@@ -75,7 +75,7 @@
 
     public void Buscar()
     {
-        var clienteEncontrado = ClienteBLL.Buscar(cliente.ClienteId);
+        var clienteEncontrado = ClientesBLL.Buscar(cliente.ClienteId);
 
         if(clienteEncontrado != null)
         {
